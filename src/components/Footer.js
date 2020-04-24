@@ -20,7 +20,7 @@ class Footer extends Component {
 
            <ul className="copyright">
               <li>&copy; Copyright 2020 Virtue Info SoftWeb Pvt. Ltd.</li>
-              <li>Design by <a title="Styleshout" href="https://www.virtueinfo.com">Virtue Info</a></li>
+              <li>Design by <a title="Styleshout" target="_blank" href="https://www.virtueinfo.com">Virtue Info</a></li>
            </ul>
 
         </div>

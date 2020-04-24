@@ -2,10 +2,10 @@
   "main": {
     "name":"Vivek Kapuriya",
     "occupation":"Software Engineer",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "description":"Here is my description. Using this to describe what I do or whatever I feel best describes myself to a potential employer",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"This is my bio section as my way of describing myself and saying what I do, what technologies I like to use or feel most comfortable with, describing my personality, or whatever else I feel like throwing in.",
+    "contactmessage":"Here is where I should write my message to readers to have them get in contact with me.",
     "email": "vivek@viinfo.com",
     "phone": "555-555-5555",
     "address":{

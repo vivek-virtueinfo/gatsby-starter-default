@@ -120,31 +120,31 @@
       {
         "title":"Canadian Wanderlust",
         "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
+        "image":"https://i.ibb.co/7b4XzZy/canadian-wanderlust.jpg",
         "url":"https://www.canadianwanderlust.com"
       },
       {
         "title":"Fury Fighting Gear",
         "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
+        "image":"https://i.ibb.co/Wf3W0Jv/fury-fighting-gear.jpg",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Original Thai Food",
         "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
+        "image":"https://i.ibb.co/4Kbp43f/original-thai-food.jpg",
         "url":"http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title":"Resume Website",
         "category":"A React based resume website template",
-        "image":"resume-website.jpg",
+        "image":"https://i.ibb.co/4RgkMqS/resume-website.jpg",
         "url":"http://www.timbakerdev.com"
       },
       {
         "title":"Smirkspace",
         "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
+        "image":"https://i.ibb.co/t4CYLHf/smirkspace.jpg",
         "url":"http://www.smirkspace.com"
       }
     ]

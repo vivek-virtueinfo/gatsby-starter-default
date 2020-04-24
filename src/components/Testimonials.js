@@ -14,8 +14,11 @@ class Testimonials extends Component {
       })
     }
 
+
     return (
-      <section id="testimonials">
+      <section id="testimonials"
+      style={{background: "#161415 url("+ "    https://i.ibb.co/931rT2d/testimonials-bg.jpg" +") no-repeat top center"}}>
+      
       <div className="text-container">
          <div className="row">
 

@@ -34,10 +34,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <hr></hr>
+        <footer style={{textAlign: 'center'}}>
+          © {new Date().getFullYear()}, Built by
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.virtueinfo.com/" target="_blank">VirtueInfo</a>
         </footer>
       </div>
     </>

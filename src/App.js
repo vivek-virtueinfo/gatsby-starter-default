@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import $ from 'jquery';
-import '../App.css';
-import '../../public/css/layout.css';
-import '../../public/css/default.css';
-import '../../public/css/fonts.css';
-import '../../public/css/magnific-popup.css';
-import '../../public/css/media-queries.css';
-import '../../public/js/init';
-import '../../public/js/jquery.fittext';
-// import '../../public/js/jquery.flexslider';
-// import '../../public/js/jquery-1.10.2.min.js';
-// import '../../public/js/modernizr';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
-import About from '../Components/About';
-import Resume from '../Components/Resume';
-import Contact from '../Components/Contact';
-import Testimonials from '../Components/Testimonials';
-import Portfolio from '../Components/Portfolio';
-
-
-
+import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import About from './Components/About';
+import Resume from './Components/Resume';
+import Contact from './Components/Contact';
+import Testimonials from './Components/Testimonials';
+import Portfolio from './Components/Portfolio';
 
 class App extends Component {
 
@@ -59,7 +46,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>

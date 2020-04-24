@@ -44,21 +44,7 @@ class movie extends Component {
 
     render() {
         return (
-            <div style={{display: 'flex', width: '100%'}}>
-                <div style={{width: '40%'}}>
-                    <button onClick={this.changeMovie}> Change movie </button>
-                    <br></br>
-                    <button onClick={this.onClick}> {this.state.buttonText} trailer </button>
-                    <div><b>Title:</b> {this.state.title}</div>
-                    <div><b>Genre:</b> {this.state.genre}</div>
-                    <img src={this.state.image} style={{width: '200px', marginTop: '5px'}} />
-
-                    <div><b>About movie:</b> {this.state.about}</div>
-                </div>
-                <div style={{width: '60%'}}>
-                    <iframe style={{width: '90%', height: '60%'}} src={`https://www.youtube.com/embed/${this.state.trailer}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+            <div>Hello</div>
         );
     }
 }

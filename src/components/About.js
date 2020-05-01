@@ -6,16 +6,13 @@ class About extends Component {
       // Checking if there is data
       if (this.props.data) {
          // Declaring and assigining values to variable
-         var name = this.props.data.name;
          var profilepic = "https://img.icons8.com/plasticine/2x/user.png";
          var bio = this.props.data.bio;
-         var street = this.props.data.address.street;
-         var city = this.props.data.address.city;
-         var state = this.props.data.address.state;
-         var zip = this.props.data.address.zip;
-         var phone = this.props.data.phone;
-         var email = this.props.data.email;
-         var resumeDownload = this.props.data.resumedownload;
+         var otherSkills = this.props.data.otherSkills.map(function (skill) {
+            return <span key={skill.tech}>
+               <span><b>{skill.tech}</b> : </span>  <span>{skill.tools}</span><br/> 
+            </span>
+          })
       }
 
       return (
@@ -28,20 +25,11 @@ class About extends Component {
                   <h2>About Me</h2>
                   <p>{bio}</p>
                   <div className="row">
-                     <div className="columns contact-details">
-                        <h2>Contact Details</h2>
+                     <div className="columns">
+                        {/* <h2>Relative Work Experience</h2> */}
+                        <h2>Other technical skills</h2>
                         <p className="address">
-                           <span>{name}</span><br />
-                           <span>{street}<br />
-                              {city} {state}, {zip}
-                           </span><br />
-                           <span>{phone}</span><br />
-                           <span>{email}</span>
-                        </p>
-                     </div>
-                     <div className="columns download">
-                        <p>
-                           <a href={resumeDownload} className="button" target="_blank">Download Resume</a>
+                           {otherSkills}
                         </p>
                      </div>
                   </div>

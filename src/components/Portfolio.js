@@ -19,6 +19,7 @@ class Portfolio extends Component {
               </div>
               <div className="link-icon"></div>
             </a>
+            <span>{projects.category}</span>
           </div>
         </div>
       })

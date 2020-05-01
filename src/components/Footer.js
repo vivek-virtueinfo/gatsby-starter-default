@@ -10,8 +10,7 @@ class Footer extends Component {
                <div className="twelve columns">
 
                   <ul className="copyright">
-                     <li>&copy; Copyright 2020 Virtue Info SoftWeb Pvt. Ltd.</li>
-                     <li>Design by <a title="Virtue Info" target="_blank" href="https://www.virtueinfo.com">Virtue Info SoftWeb Pvt. Ltd.</a></li>
+                     <li>&copy; Copyright 2020 - Profile Page</li>
                   </ul>
 
                </div>

@@ -8,12 +8,11 @@ class Header extends Component {
          // Declaring and assigining values to variable
          var name = this.props.data.name;
          var description = this.props.data.description;
-         var backgroundImage = 'https://papers.co/wallpaper/papers.co-ns52-mountain-night-sky-star-space-nature-28-wallpaper.jpg';
       }
 
       return (
          <header id="home"
-            style={{ background: "#161415 url(" + {backgroundImage} + ") no-repeat top center" }}>
+            style={{ background: "#161415 url(" + "https://papers.co/wallpaper/papers.co-ns52-mountain-night-sky-star-space-nature-28-wallpaper.jpg" + ") no-repeat top center" }}>
             <nav id="nav-wrap">
 
                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>

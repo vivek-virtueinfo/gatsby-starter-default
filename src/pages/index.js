@@ -46,14 +46,14 @@ class App extends Component {
    */
   getProfileData() {
     // Getting URL of asset from Contentful
-    client.getAsset("5iv740dYEzS9mfqMgjqlC").then(asset => {
+    client.getAsset("5oyV2jJ9yoOt1lpDHEWxIp").then(asset => {
       const fileURL = asset.fields.file.url;
       // Making API call on recieved JSON data from fileURL
       $.ajax({
         url: fileURL,
         dataType: 'json',
         cache: false,
-        success: function (data) {
+        success: function (data) {          
           // Updating state when get profile data
           this.setState({ profileData: data });
         }.bind(this),
@@ -85,7 +85,6 @@ class App extends Component {
         <About data={this.state.profileData.main} />
         <Resume data={this.state.profileData.resume} />
         <Portfolio data={this.state.profileData.portfolio} />
-        <Testimonials data={this.state.profileData.testimonials} />
         <Contact data={this.state.profileData.main} />
         <Footer data={this.state.profileData.main} />
       </div>

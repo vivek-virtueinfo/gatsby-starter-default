@@ -6,12 +6,6 @@ class Contact extends Component {
       // Checking if there is data
       if (this.props.data) {
          // Declaring and assigining values to variable
-         var name = this.props.data.name;
-         var street = this.props.data.address.street;
-         var city = this.props.data.address.city;
-         var state = this.props.data.address.state;
-         var zip = this.props.data.address.zip;
-         var phone = this.props.data.phone;
          var message = this.props.data.contactmessage;
       }
 

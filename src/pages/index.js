@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import '../App.css';
-import '../css/layout.css';
-import '../css/default.css';
-import '../css/fonts.css';
-import '../css/magnific-popup.css';
-import '../css/media-queries.css';
-import '../js/init';
+import './../static/css/layout.css';
+import './../static/css/default.css';
+import './../static/css/default.css';
+import './../static/css/fonts.css';
+import './../static/css/magnific-popup.css';
+import './../static/css/media-queries.css';
+import './../static/js/init';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import About from '../components/About';
 import Resume from '../components/Resume';
 import Contact from '../components/Contact';
-import Testimonials from '../components/Testimonials';
 import Portfolio from '../components/Portfolio';
 
 /**

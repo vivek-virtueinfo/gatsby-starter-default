@@ -41,7 +41,7 @@ class App extends Component {
    */
   getProfileData() {
     // Getting URL of asset from Contentful
-    client.getAsset("AbQjpTW6wJzLCs85uAaDk").then(asset => {
+    client.getAsset("5iv740dYEzS9mfqMgjqlC").then(asset => {
       const fileURL = asset.fields.file.url;
       // Making API call on recieved URL
       $.ajax({

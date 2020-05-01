@@ -15,8 +15,9 @@ import Contact from '../components/Contact';
 import Testimonials from '../components/Testimonials';
 import Portfolio from '../components/Portfolio';
 
-import 'font-awesome/css/font-awesome.min.css';
-
+/**
+ * To fetch resorces from contentful using its token and space
+ */
 const contentful = require("contentful");
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
@@ -26,11 +27,15 @@ const client = contentful.createClient({
 });
 
 
-
 class App extends Component {
 
+  /**
+   * To construct component
+   * @param props to get data properties of component 
+   */
   constructor(props) {
     super(props);
+    // Defining state and it's necessary variable
     this.state = {
       profileData: {}
     };
@@ -43,15 +48,18 @@ class App extends Component {
     // Getting URL of asset from Contentful
     client.getAsset("5iv740dYEzS9mfqMgjqlC").then(asset => {
       const fileURL = asset.fields.file.url;
-      // Making API call on recieved URL
+      // Making API call on recieved JSON data from fileURL
       $.ajax({
         url: fileURL,
         dataType: 'json',
         cache: false,
         success: function (data) {
+          // Updating state when get profile data
           this.setState({ profileData: data });
         }.bind(this),
         error: function (xhr, status, err) {
+          // If there is error in fetching data from URL, then it will come here
+          // Log of error
           console.log(err);
         }
       });
@@ -59,13 +67,20 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
+  /**
+   * This is component method to call when it gets mount
+   */
   componentDidMount() {
     this.getProfileData();
   }
 
+  /**
+   * To render DOM in browser from JSX
+   */
   render() {
     return (
       <div className="App">
+        {/* These all are parts of Profile page divided in components  */}
         <Header data={this.state.profileData.main} />
         <About data={this.state.profileData.main} />
         <Resume data={this.state.profileData.resume} />

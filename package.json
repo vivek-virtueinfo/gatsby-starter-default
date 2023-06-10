@@ -11,7 +11,7 @@
     "contentful": "^7.14.3",
     "file-loader": "^6.0.0",
     "font-awesome": "^4.7.0",
-    "gatsby": "^2.20.25",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-manifest": "^2.3.5",
     "gatsby-plugin-offline": "^3.1.4",
